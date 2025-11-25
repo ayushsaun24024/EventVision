@@ -71,12 +71,32 @@ Tested on a validation split with 2,204 queries :
 ✅ **Batch processing**: GPU-optimized for efficiency   
 ✅ **Flexible architecture**: Swap models easily (tested Qwen3 and BGE-m3)   
 
-## 📝 Dataset
+## 📊 The Dataset
 
-- **Database**: 202,803 articles with associated images 
-- **Train**: 19,836 query-article-image triplets 
-- **Validation**: 2,204 samples (90/10 split) 
-- **Test**: 3,000 queries for final evaluation 
+We're dealing with **serious scale** here:
+
+| Company | Records | Timespan | Granularity |
+|---------|---------|----------|-------------|
+| **AMZN** | 1.58M | 2015-2025 | 1-minute intervals |
+| **MSFT** | 1.65M | 2015-2025 | 1-minute intervals |
+| **NVDA** | 1.71M | 2015-2025 | 1-minute intervals |
+| **META** | 1.71M | 2015-2025 | 1-minute intervals |
+| **GOOGL** | 1.40M | 2015-2025 | 1-minute intervals |
+
+**Total**: ~8M records of OHLCV (Open, High, Low, Close, Volume) data
+
+### 📥 Dataset Access
+
+The full dataset is available on Kaggle:
+
+🔗 **[EQUIML Dataset](https://www.kaggle.com/datasets/manognap2505/equiml)**
+
+Download and place it in your working directory to reproduce the analysis.
+
+### Data Quality
+- **Zero missing values** in the raw dataset [attached_file:5]
+- After preprocessing: **5.29M synchronized timestamps** across all companies
+- **90 engineered features** per observation including returns, rolling stats, and volatility measures 
 
 Each article contains title, content, and a list of image IDs .
 
