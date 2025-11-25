@@ -73,12 +73,12 @@ Tested on a validation split with 2,204 queries :
 
 ## 📊 Dataset
 
-- **Database**: 202,803 articles with associated images [attached_file:3]
-- **Train**: 19,836 query-article-image triplets [attached_file:3]
-- **Validation**: 2,204 samples (90/10 split) [attached_file:3]
-- **Test**: 3,000 queries for final evaluation [attached_file:3]
+- **Database**: 202,803 articles with associated images
+- **Train**: 19,836 query-article-image triplets
+- **Validation**: 2,204 samples (90/10 split)
+- **Test**: 3,000 queries for final evaluation
 
-Each article contains title, content, and a list of image IDs [attached_file:1].
+Each article contains title, content, and a list of image IDs.
 
 ### 📥 Dataset Access
 
