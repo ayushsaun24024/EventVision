@@ -71,34 +71,26 @@ Tested on a validation split with 2,204 queries :
 ✅ **Batch processing**: GPU-optimized for efficiency   
 ✅ **Flexible architecture**: Swap models easily (tested Qwen3 and BGE-m3)   
 
-## 📊 The Dataset
+## 📊 Dataset
 
-We're dealing with **serious scale** here:
+- **Database**: 202,803 articles with associated images [attached_file:3]
+- **Train**: 19,836 query-article-image triplets [attached_file:3]
+- **Validation**: 2,204 samples (90/10 split) [attached_file:3]
+- **Test**: 3,000 queries for final evaluation [attached_file:3]
 
-| Company | Records | Timespan | Granularity |
-|---------|---------|----------|-------------|
-| **AMZN** | 1.58M | 2015-2025 | 1-minute intervals |
-| **MSFT** | 1.65M | 2015-2025 | 1-minute intervals |
-| **NVDA** | 1.71M | 2015-2025 | 1-minute intervals |
-| **META** | 1.71M | 2015-2025 | 1-minute intervals |
-| **GOOGL** | 1.40M | 2015-2025 | 1-minute intervals |
-
-**Total**: ~8M records of OHLCV (Open, High, Low, Close, Volume) data
+Each article contains title, content, and a list of image IDs [attached_file:1].
 
 ### 📥 Dataset Access
 
-The full dataset is available on Kaggle:
+The full OpenEvents-v1 dataset is available on Kaggle:
 
-🔗 **[EQUIML Dataset](https://www.kaggle.com/datasets/manognap2505/equiml)**
+🔗 **[OpenEvents-v1 Dataset](https://www.kaggle.com/datasets/ayushsaun/openeventsv1-dataset)**
 
-Download and place it in your working directory to reproduce the analysis.
-
-### Data Quality
-- **Zero missing values** in the raw dataset [attached_file:5]
-- After preprocessing: **5.29M synchronized timestamps** across all companies
-- **90 engineered features** per observation including returns, rolling stats, and volatility measures 
-
-Each article contains title, content, and a list of image IDs .
+Download and extract to your working directory. The dataset includes:
+- `database.json` - 202K+ articles with metadata
+- `train_set.csv` - Training query-article-image triplets
+- `test_public.csv` - Test queries
+- `database_images_compressed90/` - Compressed image folder
 
 ## 🔬 Evaluation Metrics
 
