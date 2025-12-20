@@ -1,0 +1,5 @@
+nohup: ignoring input
+Input Notebook:  adl-project-implementation.ipynb
+Output Notebook: output.ipynb
+Executing:   0%|          | 0/30 [00:00<?, ?cell/s]Executing notebook with kernel: python3
+Executing:   3%|▎         | 1/30 [00:00<00:21,  1.34cell/s]Executing:   7%|▋         | 2/30 [00:04<01:13,  2.64s/cell]Executing:  23%|██▎       | 7/30 [00:04<00:12,  1.90cell/s]Executing:  33%|███▎      | 10/30 [00:19<00:45,  2.29s/cell]Executing:  47%|████▋     | 14/30 [00:19<00:21,  1.34s/cell]Executing:  53%|█████▎    | 16/30 [00:21<00:16,  1.16s/cell]Executing:  60%|██████    | 18/30 [00:40<00:13,  1.16s/cell]Executing:  63%|██████▎   | 19/30 [2:12:38<2:44:06, 895.13s/cell]Executing:  70%|███████   | 21/30 [2:12:38<1:41:34, 677.18s/cell]Executing:  77%|███████▋  | 23/30 [2:12:51<58:48, 504.01s/cell]  Executing:  83%|████████▎ | 25/30 [2:13:06<30:51, 370.22s/cell]Executing:  90%|█████████ | 27/30 [6:47:28<2:07:44, 2554.70s/cell]Executing:  97%|█████████▋| 29/30 [19:37:36<2:19:54, 8394.39s/cell]Executing: 100%|██████████| 30/30 [19:37:36<00:00, 6978.02s/cell]  Executing: 100%|██████████| 30/30 [19:37:40<00:00, 2355.37s/cell]

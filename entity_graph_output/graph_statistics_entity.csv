@@ -1,0 +1,10 @@
+metric,value
+num_nodes,202803.0
+num_edges,40242.0
+avg_degree,2.687637747946303
+max_degree,45.0
+min_degree,1.0
+density,1.956874363391179e-06
+avg_similarity,0.5109094044883377
+max_similarity,1.0
+min_similarity,0.40476190476190477
