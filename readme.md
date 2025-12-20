@@ -71,14 +71,26 @@ Tested on a validation split with 2,204 queries :
 ✅ **Batch processing**: GPU-optimized for efficiency   
 ✅ **Flexible architecture**: Swap models easily (tested Qwen3 and BGE-m3)   
 
-## 📝 Dataset
+## 📊 Dataset
 
-- **Database**: 202,803 articles with associated images 
-- **Train**: 19,836 query-article-image triplets 
-- **Validation**: 2,204 samples (90/10 split) 
-- **Test**: 3,000 queries for final evaluation 
+- **Database**: 202,803 articles with associated images
+- **Train**: 19,836 query-article-image triplets
+- **Validation**: 2,204 samples (90/10 split)
+- **Test**: 3,000 queries for final evaluation
 
-Each article contains title, content, and a list of image IDs .
+Each article contains title, content, and a list of image IDs.
+
+### 📥 Dataset Access
+
+The full OpenEvents-v1 dataset is available on Kaggle:
+
+🔗 **[OpenEvents-v1 Dataset](https://www.kaggle.com/datasets/ayushsaun/openeventsv1-dataset)**
+
+Download and extract to your working directory. The dataset includes:
+- `database.json` - 202K+ articles with metadata
+- `train_set.csv` - Training query-article-image triplets
+- `test_public.csv` - Test queries
+- `database_images_compressed90/` - Compressed image folder
 
 ## 🔬 Evaluation Metrics
 
